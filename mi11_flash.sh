@@ -9,7 +9,7 @@ mkdir /home/shuaji
 tar zxvf https://bigota.d.miui.com/21.5.14/venus_android_images_2021-05-14-11-37-53.native.user_12.0_b99e159707.tgz -C /home/shuaji
 cd /home/shuaji/venus_android_images_2021-05-14-00-13-00.native.gl.user_12.0
 fastboot $* getvar product 2>&1 | grep "^product: *venus"
-if [ $? -ne 0  ] ; then echo "Missmatching image and device"; exit 1; fi
+if [ $? -ne 0  ] ; then echo "不适配你的机型"; exit 1; fi
 
 #check anti_version
 if [ -e $(dirname $0)/images/anti_version.txt ]; then
