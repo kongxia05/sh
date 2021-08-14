@@ -13,10 +13,10 @@ export PATH
 
 apt install cmatrix -y
 
-caihong( ){
+caihong(){
 cmatrix -r
 }
-start_menu( ){
+start_menu(){
 clear
 echo && echo -e " 代码雨一键脚本 by 无名氏
 注意：停止请按curl+c
